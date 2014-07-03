@@ -14,6 +14,7 @@ platforms:
     run_list:
       - recipe[apt::default]
       - recipe[golang::default]
+      - recipe[omnibus::default]
   - name: ubuntu-14.04
     run_list:
       - recipe[apt::default]
@@ -37,4 +38,5 @@ suites:
         build_dir: /home/vagrant/lumberjack
         install_dir: /opt/lumberjack
       go:
-        version: 1.2.2
+        version: 1.3
+
