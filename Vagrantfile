@@ -15,7 +15,18 @@ Vagrant.configure("2") do |config|
     c.berkshelf.berksfile_path = "./Berksfile"
     c.vm.box = "opscode-ubuntu-12.04"
     c.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-12.04_provisionerless.box"
+  end
 
+  config.vm.define 'ubuntu-10.04' do |c|
+    c.berkshelf.berksfile_path = "./Berksfile"
+    c.vm.box = "opscode-ubuntu-10.04"
+    c.vm.box_url = "https://opscode-vm-bento.s3.amazonaws.com/vagrant/opscode_ubuntu-10.04_provisionerless.box"
+  end
+
+  config.vm.define 'ubuntu-14.04' do |c|
+    c.berkshelf.berksfile_path = "./Berksfile"
+    c.vm.box = "opscode-ubuntu-14.04"
+    c.vm.box_url = "http://opscode-vm-bento.s3.amazonaws.com/vagrant/virtualbox/opscode_ubuntu-14.04_chef-provisionerless.box"
   end
 
   config.vm.define 'centos-6' do |c|
