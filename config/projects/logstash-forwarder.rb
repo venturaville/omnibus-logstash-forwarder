@@ -1,5 +1,5 @@
 
-name "lumberjack"
+name "logstash-forwarder"
 maintainer "david.nicklay@turner.com"
 homepage "https://github.com/elasticsearch/logstash-forwarder"
 
