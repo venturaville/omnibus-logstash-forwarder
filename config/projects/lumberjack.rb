@@ -9,7 +9,7 @@ build_version   "0.3.1"  # Make sure this matches the config/software/logstash-f
 build_iteration 1
 
 dependency "preparation"
-dependency "logstash-forwader"
+dependency "logstash-forwarder"
 
 exclude "\.git*"
 exclude "bundler\/git"
