@@ -5,7 +5,7 @@ require "vagrant"
 
 host_project_path = File.expand_path("..", __FILE__)
 guest_project_path = "/home/vagrant/#{File.basename(host_project_path)}"
-project_name = "logstash-forwarder"
+project_name = "lumberjack"
 
 Vagrant.configure("2") do |config|
 
