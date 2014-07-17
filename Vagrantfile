@@ -59,6 +59,9 @@ Vagrant.configure("2") do |config|
   # prepare VM to be an Omnibus builder
   config.vm.provision :chef_solo do |chef|
     chef.json = {
+      "go" => {
+        "scm" => false
+      },
       "omnibus" => {
         "build_user" => "vagrant",
         "build_dir" => guest_project_path,
